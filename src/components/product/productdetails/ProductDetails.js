@@ -38,7 +38,10 @@ class ProductDetails extends Component{
                 <div className="product-detail__container">
                     <div className="product-details">
                         <div className="product-details__name"></div>
-                        <div className="product-details__media"></div>
+                        <div className="product-details__media">
+                            <div className="product-details__priamry-image"></div>
+                            <div className="product-deetails__alternate-image-group"></div>
+                        </div>
                         <div className="product-details__info"></div>
                         <div className="product-details__description"></div>
                     </div>
