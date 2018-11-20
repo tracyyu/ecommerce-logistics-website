@@ -1,0 +1,77 @@
+.shipment-page-content{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.shipment-page-content__hero-banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    z-index: 5;
+}
+
+.shipment-page-content__hero-banner{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url('../../../../assets//img/logistics-returns.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .hero-banner__title{
+        position: absolute;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        top: 30%;
+        left: 0;
+        right: 0;
+        max-width: 580px;
+        margin: 0 auto;
+        color: white;
+    
+        p{
+            line-height: 1.8rem;
+        }
+    }
+    margin-bottom: 100px;
+}
+
+.shipment-page-content__description{
+    margin-bottom: 100px;
+    .shipment{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 35px;
+    }
+    
+    .shipment__description{
+        grid-column: 2/6;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.shipment-page-content__order-forms{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .order{
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .img{
+        width: 100%;
+        grid-column: 3/4;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

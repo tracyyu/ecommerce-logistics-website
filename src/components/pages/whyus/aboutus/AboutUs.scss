@@ -1,0 +1,119 @@
+.about-page-content{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.about-page-content__hero-banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    z-index: 5;
+}
+
+.about-page-content__hero-banner{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url('../../../../assets/img/decoration-4.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .hero-banner__title{
+        position: absolute;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        top: 30%;
+        left: 0;
+        right: 0;
+        max-width: 580px;
+        margin: 0 auto;
+        color: white;
+    
+        p{
+            line-height: 1.8rem;
+        }
+    }
+    margin-bottom: 100px;
+}
+
+.about-page-content__description{
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 35px;
+    }
+    
+    .about-us__description{
+        grid-column: 2/6;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.about-page-content__team{
+    h1{
+        padding-bottom: 20px;
+    }
+
+    margin: 100px 0 0 0;
+    .team__items-row{
+        padding-left: 100px;
+        padding-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3em;
+    
+    
+        .team__item{
+            margin-bottom: 30px;
+            padding-top: 360px;
+            position: relative;
+    
+            .team__item-image{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 360px;
+                -webkit-transition: all .7s ease;
+                -o-transition: all .7s ease;
+                transition: all .7s ease;
+                background-position: 0 0;
+                overflow: hidden;
+                background-size: cover;
+
+                img{
+                    width: auto;
+                    height: auto;
+                    max-height: 360px;
+                    
+                }
+            }
+    
+            .team__item-description{
+                max-width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 80px;
+                margin-top: 25px;
+                text-align: center;
+                position: relative;
+    
+                span{
+                    display: block;
+                    text-transform: uppercase;
+                }
+    
+                p{
+                    font-style: normal;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

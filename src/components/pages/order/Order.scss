@@ -1,0 +1,111 @@
+.order-page-content{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.order-page-content__hero-banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    z-index: 5;
+}
+
+.order-page-content__hero-banner{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url('../../../assets/img/orderImgBanner.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .hero-banner__title{
+        position: absolute;
+        margin: 0 auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        max-width: 580px;
+        margin: 0 auto;
+        color: white;
+    
+        p{
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.order-page-content__order-forms{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+}
+
+.order-forms__link{
+    display: inline-block;
+    margin: 0 auto;
+
+    a{  
+        pointer-events: visible;
+        display: block;
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 18px 10px;
+        letter-spacing: 1px;
+        width: 250px;
+        z-index: 10;
+    }
+
+    a:hover{
+        pointer-events: visible;
+        color: #D78796;
+        border: 2px solid #D78796;
+    }
+}
+
+.order-page-content__order-policy{
+    .order-policy__wholesale{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-content: center;
+        padding: 0 100px;
+        grid-column-gap: 5em;
+
+        .shipment-policy, .return-policy{
+            line-height: 2rem;
+            ul, ol{
+                text-align: left;
+
+                li{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .order-policy__logistics{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        align-content: center;
+
+        .logistics-policy{
+            grid-column: 2/4;
+            ul{
+                line-height: 2rem;
+                text-align: left;
+            }
+        }
+    }
+}
