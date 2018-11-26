@@ -14,6 +14,9 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="N2FmY2I5OGEtZTg0ZS00OWMyLWI3MTgtNTQ0MWM5ZTA0NjA2NjM2Nzg4NDc5NTg4OTY1Mzcx"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,5 +43,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      (() => {
+        'use strict';
+        // Page is loaded
+        const objects = document.getElementsByClassName('asyncImage');
+        Array.from(objects).map((item) => {
+          // Start loading image
+          const img = new Image();
+          img.src = item.dataset.src;
+          // Once image is loaded replace the src of the HTML element
+          img.onload = () => {
+            item.classList.remove('asyncImage');
+            return item.nodeName === 'IMG' ? 
+              item.src = item.dataset.src :        
+              item.style.backgroundImage = `url(${item.dataset.src})`;
+          };
+        });
+      })();
+    </script>
   </body>
 </html>

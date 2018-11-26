@@ -1,0 +1,51 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "roseedition-20181120154359-authRole",
+			"UnauthRoleArn": "arn:aws:iam::356178000146:role/roseedition-20181120154359-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::356178000146:role/roseedition-20181120154359-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "roseedition-20181120154359-deployment",
+			"UnauthRoleName": "roseedition-20181120154359-unauthRole",
+			"StackName": "roseedition-20181120154359",
+			"StackId": "arn:aws:cloudformation:eu-west-1:356178000146:stack/roseedition-20181120154359/187c6f10-ed1e-11e8-bc6b-50a686335cd2"
+		}
+	},
+	"auth": {
+		"cognito2f4b0492": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/roseedition-20181120154359-deployment/amplify-cfn-templates/auth/cognito2f4b0492-cloudformation-template.yml",
+				"logicalId": "authcognito2f4b0492"
+			},
+			"lastPushTimeStamp": "2018-11-21T05:59:43.998Z",
+			"output": {
+				"AppClientSecret": "1d7l98uhc9e3japefg3fj8avubbkol97r4d89b9kjie577po7hk4",
+				"UserPoolId": "eu-west-1_AagnY4IqD",
+				"AppClientIDWeb": "28mbbhdcam02svd47acssv114s",
+				"AppClientID": "5sqg2ohtfbon5s0q2kbbhk7s73",
+				"IdentityPoolId": "eu-west-1:df23e9d6-fdac-43e2-a523-f997fc730356",
+				"IdentityPoolName": "cognito2f4b0492_identitypool_2f4b0492",
+				"UserPoolName": "cognito2f4b0492_userpool_2f4b0492"
+			},
+			"lastPushDirHash": "o8ofY3vJ27cc1+6wmUdDH1us4f4="
+		}
+	},
+	"storage": {
+		"s3b8d10117": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/roseedition-20181120154359-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storages3b8d10117"
+			},
+			"lastPushTimeStamp": "2018-11-21T05:59:44.000Z",
+			"output": {
+				"BucketName": "roseedition63af9e0450e54baf8c8ad8f4e96412d9",
+				"Region": "eu-west-1"
+			},
+			"lastPushDirHash": "CwS8Jhr/SJpo+mombRvFUQFC8uY="
+		}
+	}
+}

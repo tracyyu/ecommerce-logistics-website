@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "roseedition-20181120154359-authRole",
+            "UnauthRoleArn": "arn:aws:iam::356178000146:role/roseedition-20181120154359-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::356178000146:role/roseedition-20181120154359-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "roseedition-20181120154359-deployment",
+            "UnauthRoleName": "roseedition-20181120154359-unauthRole",
+            "StackName": "roseedition-20181120154359",
+            "StackId": "arn:aws:cloudformation:eu-west-1:356178000146:stack/roseedition-20181120154359/187c6f10-ed1e-11e8-bc6b-50a686335cd2"
+        }
+    }
+}

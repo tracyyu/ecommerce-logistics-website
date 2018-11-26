@@ -3,10 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ProductCarousel from '../ui/productCarousel/ProductCarousel';
 import './Homepage.scss';
-import {
-    Button
-  } from '@material-ui/core';
+import {Button} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+
+import Amplify, { API, graphqlOperation, Storage } from 'aws-amplify';
+
 import LogisticsImg from '../../assets/img/logistics-returns.jpg';
 import WarehouseImg from '../../assets/img/warehouse.jpg';
 import PackagingImg from '../../assets/img/packing-boxes.jpg';
@@ -87,7 +88,7 @@ const HomePage = props => (
             </div>
             <div className="featured-services__items-row">
                 <div className="featured-services__item">
-                    <div className="featured-services__item-image" style={{backgroundImage: `url(${WarehouseImg})`}}>
+                    <div className="featured-services__item-image asyncImage" style={{backgroundImage: `url(${WarehouseImg})`}}>
                         <a href="">Discover More</a>
                     </div>
                     <div className="featured-services__item-description">
@@ -97,7 +98,7 @@ const HomePage = props => (
                     </div>
                 </div>
                 <div className="featured-services__item">
-                    <div className="featured-services__item-image" style={{backgroundImage: `url(${LogisticsImg})`}}>
+                    <div className="featured-services__item-image asyncImage" style={{backgroundImage: `url(${LogisticsImg})`}}>
                         <a href="">Discover More</a>
                     </div>
                     <div className="featured-services__item-description">
@@ -107,7 +108,7 @@ const HomePage = props => (
                     </div>
                 </div>
                 <div className="featured-services__item">
-                    <div className="featured-services__item-image" style={{backgroundImage: `url(${PackagingImg})`}}>
+                    <div className="featured-services__item-image asyncImage" style={{backgroundImage: `url(${PackagingImg})`}}>
                         <a href="">Discover More</a>
                     </div>
                     <div className="featured-services__item-description">
@@ -127,7 +128,7 @@ const HomePage = props => (
                 <div className="news-dashboard-card-main">
                     <a href="" className="news-dashboard-card">
                         <div className="news-dashboard-card__image">
-                            <img src={TradeShow} />
+                            <img className="asyncImage" src={TradeShow} />
                         </div>
                         <div className="news-dashboard-card__text-box">
                             <div className="flex-copy-item">
@@ -148,7 +149,7 @@ const HomePage = props => (
                     <div className="news-dashboard-card-past-entry">
                         <a href="" className="news-dashboard-card">
                             <div className="news-dashboard-card__image">
-                                <img src={Tradeshow3} alt="NY NOW 2018"/>
+                                <img className="asyncImage" src={Tradeshow3} alt="NY NOW 2018"/>
                             </div>
                             <div className="news-dashboard-card__text-box">
                                 <div className="flex-copy-item">
@@ -166,7 +167,7 @@ const HomePage = props => (
                     <div className="news-dashboard-card-past-entry">
                         <a href="" className="news-dashboard-card">
                             <div className="news-dashboard-card__image">
-                                <img src={Tradeshow2} alt="Creativation 2017"/>
+                                <img className="asyncImage" src={Tradeshow2} alt="Creativation 2017"/>
                             </div>
                             <div className="news-dashboard-card__text-box">
                                 <div className="flex-copy-item">
@@ -184,7 +185,7 @@ const HomePage = props => (
                     <div className="news-dashboard-card-past-entry">
                         <a href="" className="news-dashboard-card">
                             <div className="news-dashboard-card__image">
-                                <img src={TradeShow4} alt="ASD Market Week"/>
+                                <img className="asyncImage" src={TradeShow4} alt="ASD Market Week"/>
                             </div>
                             <div className="news-dashboard-card__text-box">
                                 <div className="flex-copy-item">
@@ -202,7 +203,7 @@ const HomePage = props => (
                     <div className="news-dashboard-card-past-entry">
                         <a href="" className="news-dashboard-card">
                             <div className="news-dashboard-card__image">
-                                <img src={Tradeshow5}/>
+                                <img className="asyncImage" src={Tradeshow5}/>
                             </div>
                             <div className="news-dashboard-card__text-box">
                                 <div className="flex-copy-item">

@@ -1,0 +1,9 @@
+{
+    "bucketName": "roseedition63af9e0450e54baf8c8ad8f4e96412d9",
+    "authPolicyName": "s3_amplify_b8d10117",
+    "unauthPolicyName": "s3_amplify_b8d10117",
+    "authRoleName": "roseedition-20181120154359-authRole",
+    "unauthRoleName": "roseedition-20181120154359-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}

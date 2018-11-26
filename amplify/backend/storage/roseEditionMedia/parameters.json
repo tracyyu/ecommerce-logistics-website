@@ -1,0 +1,9 @@
+{
+    "bucketName": "rose-edition-images",
+    "authPolicyName": "s3_amplify_22106a07",
+    "unauthPolicyName": "s3_amplify_22106a07",
+    "authRoleName": "roseedition-20181120122554-authRole",
+    "unauthRoleName": "roseedition-20181120122554-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}
