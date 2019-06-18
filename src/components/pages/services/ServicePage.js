@@ -1,7 +1,6 @@
 import React from 'react';
 // Import routing components
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './ServicePage.scss';
 import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import LogisticsImg from '../../../assets/img/logistics-returns.jpg';

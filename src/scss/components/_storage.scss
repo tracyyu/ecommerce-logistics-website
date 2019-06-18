@@ -1,9 +1,9 @@
-.fulfillment-page-content{
+.storage-page-content{
     padding-bottom: 50px;
     border-bottom: 1px solid #eeeeee;
 }
 
-.fulfillment-page-content__hero-banner-overlay {
+.storage-page-content__hero-banner-overlay {
     width: 100%;
     height: 100%;
     background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
@@ -13,11 +13,11 @@
     z-index: 5;
 }
 
-.fulfillment-page-content__hero-banner{
+.storage-page-content__hero-banner{
     width: 100%;
     height: 60vh;
     position: relative;
-    background-image: url('../../../../assets//img/packing-boxes.jpg');
+    background-image: url('../assets/img/warehouse.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -40,24 +40,16 @@
     margin-bottom: 100px;
 }
 
-.fulfillment-page-content__description{
-    .fulfillment{
+.storage-page-content__description{
+    .storage{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         padding-bottom: 35px;
     }
     
-    .fulfillment__description{
+    .storage__description{
         grid-column: 2/6;
         font-size: 14px;
         line-height: 28px;
-
-        ul{
-            margin: 0 auto;
-            li{
-                text-align: left;
-                line-height: 3.8rem;
-            }
-        }
     }
 }

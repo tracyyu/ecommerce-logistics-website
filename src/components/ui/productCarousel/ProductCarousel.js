@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import ReactDOM from "react-dom";
-import './ProductCarousel.scss';
 
 class ProductCarousel extends Component{
     render(){  

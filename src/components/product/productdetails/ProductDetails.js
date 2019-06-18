@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { findDOMNode } from "react-dom";
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
@@ -31,6 +32,14 @@ const styles = theme => ({
 });
 
 class ProductDetails extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+
+        };
+    }
+
 
     render(){
         return(

@@ -1,5 +1,4 @@
 import React from 'react';
-import './AboutUs.scss';
 import DavidKang from '../../../../assets/img/team/DavidKang.jpg';
 import SophiaChen from '../../../../assets/img/team/SophiaChen.jpg';
 import JessicaAlvarez from '../../../../assets/img/team/JessicaAlvarez.jpg';

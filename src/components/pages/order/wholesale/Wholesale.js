@@ -13,7 +13,6 @@ import CompanyInfo from '../formComponent/CompanyInfo';
 import ShippingAddress from '../formComponent/ShippingAddress';
 import PaymentForm from '../formComponent/PaymentForm';
 import ReviewForm from '../formComponent/ReviewForm';
-import './Wholesale.scss';
 
 const styles = theme => ({
     paper: {

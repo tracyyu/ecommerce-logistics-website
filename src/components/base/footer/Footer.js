@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './Footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Footer extends Component{

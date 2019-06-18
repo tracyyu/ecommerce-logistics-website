@@ -1,5 +1,4 @@
 import React from 'react';
-import './ContactUs.scss';
 import ContactForm from '../../../ui/contactForm/ContactForm';
 
 const ContactUs = props => (

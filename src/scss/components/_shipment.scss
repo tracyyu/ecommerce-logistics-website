@@ -1,9 +1,9 @@
-.storage-page-content{
+.shipment-page-content{
     padding-bottom: 50px;
     border-bottom: 1px solid #eeeeee;
 }
 
-.storage-page-content__hero-banner-overlay {
+.shipment-page-content__hero-banner-overlay {
     width: 100%;
     height: 100%;
     background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
@@ -13,11 +13,11 @@
     z-index: 5;
 }
 
-.storage-page-content__hero-banner{
+.shipment-page-content__hero-banner{
     width: 100%;
     height: 60vh;
     position: relative;
-    background-image: url('../../../../assets//img/warehouse.jpg');
+    background-image: url('../assets/img/logistics-returns.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -40,16 +40,38 @@
     margin-bottom: 100px;
 }
 
-.storage-page-content__description{
-    .storage{
+.shipment-page-content__description{
+    margin-bottom: 100px;
+    .shipment{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         padding-bottom: 35px;
     }
     
-    .storage__description{
+    .shipment__description{
         grid-column: 2/6;
         font-size: 14px;
         line-height: 28px;
+    }
+}
+
+.shipment-page-content__order-forms{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .order{
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .img{
+        width: 100%;
+        grid-column: 3/4;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
     }
 }

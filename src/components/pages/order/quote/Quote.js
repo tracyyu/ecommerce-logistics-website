@@ -4,8 +4,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Button from '@material-ui/core/Button';
 import QuoteForm from '../formComponent/QuoteForm';
 
-import './Quote.scss';
-
 const styles = theme => ({
     button: {
         margin: '0 auto',

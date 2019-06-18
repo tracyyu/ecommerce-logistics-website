@@ -1,7 +1,6 @@
 import React from 'react';
 // Import routing components
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './Storage.scss';
 import StorageImg from '../../../../assets/img/services/storageImg.jpg';
 
 const Storage = props => (

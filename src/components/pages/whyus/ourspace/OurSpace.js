@@ -1,5 +1,4 @@
 import React from 'react';
-import './OurSpace.scss';
 
 const OurSpace = props => (
     <div className="ourspace-page-content">

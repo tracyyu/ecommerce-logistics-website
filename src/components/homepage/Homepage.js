@@ -2,7 +2,6 @@ import React from 'react';
 // Import routing components
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ProductCarousel from '../ui/productCarousel/ProductCarousel';
-import './Homepage.scss';
 import {Button} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 

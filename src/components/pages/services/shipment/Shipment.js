@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ShipmentImg from '../../../../assets/img/services/shipmentImg.jpg';
 import ShipmentMethod from '../../../../assets/img/services/shippingMethods.jpg';
-import './Shipment.scss';
 
 const Shipment = props => (
     <div className="shipment-page-content">

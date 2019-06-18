@@ -1,7 +1,6 @@
 import React from 'react';
 // Import routing components
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './Fulfillment.scss';
 import FulfillmentImg from '../../../../assets/img/services/fufillmentImg.jpg';
 
 const Fulfillment = props => (
