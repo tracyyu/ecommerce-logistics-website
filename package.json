@@ -42,7 +42,7 @@
     "i": "^0.3.6",
     "jest": "20.0.4",
     "material-ui-popup-state": "^1.0.1",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "npm": "^6.4.1",
     "object-assign": "4.1.1",
